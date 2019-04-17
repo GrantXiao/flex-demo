@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box{
+            display: flex;
+            /* 垂直方向，顶部对齐 */
+            /* align-items:flex-start; */
+            /* 垂直方向，底部对齐 */
+            /* align-items:flex-end; */
+            /* 垂直方向，居中 */
+            /* align-items:center; */
+            /* 垂直方向，文字基线对齐 */
+            align-items:baseline;
+            /* 默认，如果项目没有甚至高度或者auto,将占满整个容器的高度 */
+            /* align-items:stretch; */
+            background: #999999;
+            width:100%;
+        }
+        .box span{
+            width: 50px;
+            background: chartreuse;
+            margin: 10px 10px;
+            padding: 10px
+        }
+        .box span:nth-of-type(2n){
+            height: 100px
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <span>元素1</span>
+        <span>元素2</span>
+        <span>元素3</span>
+        <span>元素4</span>
+        <span>元素5</span>
+        <span>元素6</span>
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box{
+            display: flex;
+            /* 不换行，默认 */
+            /* flex-wrap: nowrap; */
+            /* 换行*/
+            /* flex-wrap: wrap; */
+            /* 换行，第一行在底部 */
+            flex-wrap:wrap-reverse;
+            width: 200px;
+            background: #999999
+
+        }
+        .box span{
+            width: 50px;
+            background: chartreuse;
+            margin: 10px 10px;
+            padding: 10px
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <span>元素1</span>
+        <span>元素2</span>
+        <span>元素3</span>
+        <span>元素4</span>
+        <span>元素5</span>
+        <span>元素6</span>
+    </div>
+</body>
+</html>

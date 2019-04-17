@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* order定义项目的排列顺序。数值越小，排列越靠前，默认为0 */
+        .box{
+            display: flex;
+            display: -webkit-flex;
+            background: #999;
+        }
+        .box span{
+            margin: 10px 10px;
+            padding: 10px;
+            background: #ff0;
+        }
+        .box span:nth-of-type(1){
+            order: 10;
+        }
+        .box span:nth-of-type(2){
+            order: -1;
+        }
+        .box span:nth-of-type(5){
+            order: -10;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5</span>
+        <span>6</span>
+    </div>
+</body>
+</html>

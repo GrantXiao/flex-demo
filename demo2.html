@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>网格固定，其余分配剩余空间</title>
+    <style>
+        .box{
+            display: flex;
+            justify-content: center;
+            background:chartreuse
+        }
+        .box>span{
+            flex: 1;
+            text-align:center;
+            border:1px solid #000;
+        }
+        .box span:nth-of-type(1){
+            flex: 0 0 50%; /*flex-grow: 0;flex-shrink: 0;flex-basis: 50%;的缩写*/
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <span>占用50%</span>
+        <span>等分剩余空间</span>
+        <span>等分剩余空间</span>
+    </div>
+</body>
+</html>

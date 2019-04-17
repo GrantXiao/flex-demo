@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box{
+            display: flex;
+    display: -webkit-flex;
+    /*默认，项目左对齐*/
+    justify-content: flex-start;
+    /*项目右对齐*/
+    /*justify-content: flex-end;*/
+    /*项目居中对齐*/
+    /*justify-content: center;*/
+    /*项目两端对齐*/
+    /*justify-content: space-between;*/
+    /*每个项目两侧的间隔相等*/
+    /*justify-content: space-around;*/
+    background: #999;
+    width: 100%;
+        }
+        .box span{
+            width: 50px;
+            background: chartreuse;
+            margin: 10px 10px;
+            padding: 10px
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <span>元素1</span>
+        <span>元素2</span>
+        <span>元素3</span>
+        <span>元素3</span>
+        <span>元素3</span>
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* flex-grow属性定义项目的放大比例，
+        主要在父元素的宽度大于子元素的宽度之和时候起作用，
+        它定义子元素如何分配父元素的剩余宽度，默认为0，
+        这个时候不索取父元素的宽度 */
+        /* 例如：
+        假设父元素的宽度为1000px,
+        5个子元素，每个子元素的宽度为100px,
+        则还剩余500px的宽度，
+        第1个子元素flex-grow值为 1，
+        第2个子元素flex-grow值为 2，
+        则会把500px分成三等分，
+        第1个子元素增加500乘以1/3px的宽度，
+        第2个子元素增加500乘以2/3px的宽度 */
+        .box{
+            display: flex;
+            display: -webkit-flex;
+            background: #999;
+        }
+        .box span{
+            margin: 10px 10px;
+            padding: 10px;
+            background: #ff0;
+            width: 50px;
+        }
+        .box span:nth-of-type(1){
+            flex-grow: 1;
+        }
+        .box span:nth-of-type(2){
+            flex-grow: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5</span>
+    </div>
+</body>
+</html>
